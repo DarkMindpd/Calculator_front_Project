@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" href="./static/image/Dtafalonso-Android-Lollipop-Calculator.512.png">
+    <link rel="stylesheet" href="./CSS/syle.css" />
+    <link rel="stylesheet" href="./FontAwesome/css/all.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <div>
+          <p id="smalltext"></p>
+          <p id="bigtext"></p>
+        </div>
+        <div>
+          <a onclick="del_last()">
+            <i class="fa-regular fa-delete-left"></i>
+          </a>
+        </div>
+        <div>
+          <div>
+            <a onclick="get_value('(')">
+              <span>(</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value(')')">
+              <span>)</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('%')">
+              <span>%</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('÷')">
+              <span>÷</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('7')">
+              <span>7</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('8')">
+              <span>8</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('9')">
+              <span>9</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('×')">
+              <span>×</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('4')">
+              <span>4</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('5')">
+              <span>5</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('6')">
+              <span>6</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('-')">
+              <span>-</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('1')">
+              <span>1</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('2')">
+              <span>2</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('3')">
+              <span>3</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('+')">
+              <span>+</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="del()">
+              <span>C</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('0')">
+              <span>0</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="get_value('.')">
+              <span>.</span>
+            </a>
+          </div>
+          <div>
+            <a onclick="equal()">
+              <span>=</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
