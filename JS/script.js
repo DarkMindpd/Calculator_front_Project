@@ -69,8 +69,14 @@ function get_value(value) {
   ) {
     near_machine_language.splice(near_machine_language.length - 2, 1);
     human_language.splice(human_language.length - 2, 1);
-  }
-  show([], human_language);
+  } else if (
+    human_language[human_language.length - 2] == "." && 
+    value == "."
+    ) {
+      near_machine_language.splice(near_machine_language.length - 2, 1);
+      human_language.splice(human_language.length - 2, 1);
+    }
+    show([], human_language);
 }
 
 function del_last() {
